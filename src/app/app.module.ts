@@ -6,13 +6,21 @@ import {BrowserAnimationsModule, NoopAnimationsModule} from "@angular/platform-b
 import {MdButtonModule, MdCheckboxModule} from "@angular/material";
 
 import 'hammerjs';
+import {FormsModule} from "@angular/forms";
+import { TodoFormComponent } from './todo-form/todo-form.component';
+import { TodoListComponent } from './todo-list/todo-list.component';
+import { TodoItemComponent } from './todo-item/todo-item.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TodoFormComponent,
+    TodoListComponent,
+    TodoItemComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     BrowserAnimationsModule,
     NoopAnimationsModule,
     MdButtonModule,
