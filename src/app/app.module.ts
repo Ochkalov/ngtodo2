@@ -10,6 +10,7 @@ import {FormsModule} from "@angular/forms";
 import { TodoFormComponent } from './todo-form/todo-form.component';
 import { TodoListComponent } from './todo-list/todo-list.component';
 import { TodoItemComponent } from './todo-item/todo-item.component';
+import {TodoService} from "./shared/todo.service";
 
 @NgModule({
   declarations: [
@@ -26,7 +27,7 @@ import { TodoItemComponent } from './todo-item/todo-item.component';
     MdButtonModule,
     MdCheckboxModule
   ],
-  providers: [],
+  providers: [TodoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
